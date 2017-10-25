@@ -1,0 +1,6 @@
+ #和$区别
+ 
+ 在配置文件中，需要用到#和$  比如${qry_infoparkid}是把qry_infoparkid的值直接拼到sql语句中 不做任何改变 若字段是num类型，那${qry_infoparkid}
+ 就没有问题，若字段是string类型  则应该写成'${qry_infoparkid}'
+ 
+ 而对于#  如果字段id为字符型，那么#qry_infoparkid#表示的就是'id'类型，如果id为整型，那么#qry_infoparkid#就是id类型，会根据字段的属性做出一些改变
